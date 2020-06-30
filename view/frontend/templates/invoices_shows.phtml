@@ -4,12 +4,12 @@
         <table class="data table table-order-items history" id="my-invoices-table">
             <thead>
             <tr>
-                <th scope="col" class="col id"><?php echo $block->escapeHtml(__('Order') ?></th>
-                <th scope="col" class="col "><?php echo $block->escapeHtml(__('Invoice Number') ?></th>
+                <th scope="col" class="col id"><?php echo $block->escapeHtml(__('Order')) ?></th>
+                <th scope="col" class="col "><?php echo $block->escapeHtml(__('Invoice Number')) ?></th>
                 <th scope="col" class="col date"><?php echo $block->escapeHtml(__('Invoice Date') ?></th>
-                <th scope="col" class="col total"><?php echo $block->escapeHtml(__('Total Tax Excl.') ?></th>
-                <th scope="col" class="col status"><?php echo $block->escapeHtml(__('Total Tax incl.') ?></th>
-                <th scope="col" class="col actions"><?php echo $block->escapeHtml(__('Action') ?></th>
+                <th scope="col" class="col total"><?php echo $block->escapeHtml(__('Total Tax Excl.')) ?></th>
+                <th scope="col" class="col status"><?php echo $block->escapeHtml(__('Total Tax incl.')) ?></th>
+                <th scope="col" class="col actions"><?php echo $block->escapeHtml(__('Action')) ?></th>
             </tr>
             </thead>
             <tbody>
@@ -20,7 +20,7 @@
                     <td class="col date"><?php echo $invoice['document_date']; ?></td>
                     <td class="col total"><?php echo $invoice['document_total_tax_excl']; ?></td>
                     <td class="col status"><?php echo $invoice['document_total_tax_incl']; ?></td>
-                    <td class="col actions"><a href="<?php echo $invoice['link']; ?>" target="_blank"><?php echo __('View') ?></a></td>
+                    <td class="col actions"><a href="<?php echo $invoice['link']; ?>" target="_blank"><?php echo $block->escapeHtml(__('View')) ?></a></td>
                 </tr>
             <?php ;} ?>
             </tbody>
